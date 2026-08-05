@@ -1,2 +1,3 @@
 //começando...
 //const, let, var
+// a = 2 ou var = 2 ou a = abc
