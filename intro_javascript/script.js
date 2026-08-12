@@ -131,3 +131,60 @@ olaResult() */
 let res = eAgora()
 res.f1()
 res.f2() */
+
+//objetos javascript
+//objetos JSON (javascript object notation)
+//Uma pessoa e se chama João e tem 17 anos
+/* let pessoa = {  //coleção de par chave valor
+    nome: "João", //par chave valor
+    idade: 17     //outro par chave valor
+}
+console.log(pessoa.nome)
+console.log(pessoa['idade']) */
+
+/* let pessoa = {
+    nome: 'Maria',
+    idade: 21,
+    endereco: {
+        rua: 'B', 
+        numero: 20
+    }
+}
+console.log('Rua: ' + pessoa.endereco.rua)
+console.log('Numero: ' + pessoa['endereco']['numero']) */
+
+/* let concessionaria = {
+    nome: 'Classe A',
+    cnpj: 333444555, 
+    endereco:{
+        rua: 'AB',
+        numero: 12,
+        bairro: 'Tatuape'
+    },
+    veiculos : [
+        {
+            marca: 'Fiat',
+            modelo: 'Uno',
+            ano: 2010   
+        },
+        {
+            marca: 'Ford',
+            modelo: 'Ka',
+            ano: 2018
+        }
+    ]
+   
+}
+for (let veiculos of concessionaria.veiculos){   //for
+    console.log(veiculos.modelo)
+} */
+
+/* const calculadora = {
+    somar: function (a, b){
+        return a + b
+    },
+    subtrair: (a, b) => a - b 
+}
+console.log(calculadora.somar(2,3))
+console.log(calculadora.subtrair(2,3)) */
+
