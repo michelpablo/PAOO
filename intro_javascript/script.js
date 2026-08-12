@@ -116,3 +116,18 @@ function ola(){
 }
 let olaResult = ola()
 olaResult() */
+
+/* function eAgora(){
+    let cont = 1
+    function f1(){
+        console.log(cont)
+    }
+    cont++
+    function f2(){
+        console.log(cont)
+    }
+    return {f1, f2}
+}
+let res = eAgora()
+res.f1()
+res.f2() */
