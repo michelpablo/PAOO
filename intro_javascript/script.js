@@ -188,3 +188,32 @@ for (let veiculos of concessionaria.veiculos){   //for
 console.log(calculadora.somar(2,3))
 console.log(calculadora.subtrair(2,3)) */
 
+// function demorada(){ //ex execucao assincrona
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while(new Date().getTime() <= atualMais2Segundos); //atrasa a execucao em 2 seg
+//     const d = 8 + 4
+//     return d
+// }
+// const a = 2 + 3
+// const b = 5 + 9
+// // const d = demorada()
+// setTimeout(() => {
+//     const d = demorada()
+//     console.log(`d: ${d}`)
+// }, 500)
+// const e = 2 + a + b
+// console.log(`e: ${e}`) //interpolação
+
+// console.log('script principal comecou')
+// setTimeout(() => {
+//     console.log('dentro da timeout')
+// }, 0)
+// const data = new Date().getTime() + 1000
+// while(new Date().getTime() <= data);
+// console.log('script principal terminou')
+
+
+//cpu-bound: dominada por calculos ex loop soma de 1 a 100
+//io-bund: dominada por operacoes de entrada e saida (acesso a arquivo, requesicao http)
+// 
+

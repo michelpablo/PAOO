@@ -1,25 +1,15 @@
-let concessionaria = {
-    nome: 'Classe A',
-    cnpj: 333444555, 
-    endereco:{
-        rua: 'AB',
-        numero: 12,
-        bairro: 'Tatuape'
-    },
-    veiculos : [
-        {
-            marca: 'Fiat',
-            modelo: 'Uno',
-            ano: 2010   
-        },
-        {
-            marca: 'Ford',
-            modelo: 'Ka',
-            ano: 2018
+const fs = require('fs') //file system
+const abrirArquivo = function (nomeArquivo){
+    //definir uma funcao callback
+    const exibirConteudo = function(erro, conteudo){
+        if(erro){
+            console.log(`Deu erro: ${erro}`)
         }
-    ]
-   
+        else{
+            console.log(conteudo.toString())
+        }
+    }
+    //chamar a funcao de leitura do arquivo, entregando a callback como parametro
+    fs.readFile(nomeArquivo, exibirConteudo)
 }
-for (let veiculo of concessonaria.veiculos){
-    console.log()
-}
+abrirArquivo("arquivo.txt")
