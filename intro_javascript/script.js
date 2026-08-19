@@ -217,3 +217,35 @@ console.log(calculadora.subtrair(2,3)) */
 //io-bund: dominada por operacoes de entrada e saida (acesso a arquivo, requesicao http)
 // 
 
+//promise é um objeto JS que fica associado a funcao demorada, para obter seu resultado no futuro
+
+//1 + 2 + 3 + ... + (n-2) + (n-1) + n
+const calculoRapidinho = (n) => {
+  return n >= 0 ? Promise.resolve((n / 2) * (n + 1)) : Promise.reject("Apenas positivos")
+}
+//tratar ambos os casos usando then ou catch
+calculoRapidinho(10)
+.then(res => console.log(`Resultado: ${res}`))
+.catch(erro => console.log(`Erro: ${erro}`))
+
+
+// calculoRapidinho(100).then((res) => {
+//   console.log(res)
+// })
+// console.log('Terminando script principal...')
+
+// function calculoDemorado(n){
+//   return new Promise(function(resolve, reject){
+//     let res = 0
+//     for(let i = 1; i <= n; i++){
+//       res += i
+//     }
+//     resolve(res)
+//   })
+// }
+// //construção then/catch
+// //calculoDemorado(100).then((resultado) => {console.log(resultado)})
+// const auxiliar = calculoDemorado(100)
+// auxiliar.then(function(res){
+//   console.log(res)
+// })
